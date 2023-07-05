@@ -12,10 +12,10 @@ function Home() {
   const [moviesData, setMoviesData] = useState([]);
 
   useEffect(() => {
-    fetch("https://mymoviesback-nine.vercel.app/movies")
+    fetch("https://backend-mymovies5.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
-        console.log("front fetch", data)
+        console.log("front fetch", data);
         setMoviesData(data.movies);
       });
   }, []);
