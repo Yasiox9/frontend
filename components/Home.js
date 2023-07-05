@@ -15,7 +15,7 @@ function Home() {
     fetch("https://mymoviesback-nine.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        console.log("front fetch", data)
         setMoviesData(data.movies);
       });
   }, []);
